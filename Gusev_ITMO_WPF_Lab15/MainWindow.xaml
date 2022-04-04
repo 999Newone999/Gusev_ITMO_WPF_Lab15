@@ -1,0 +1,73 @@
+﻿<Window x:Class="Gusev_ITMO_WPF_Lab15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="800" Width="700">
+    <Grid>
+        <FlowDocumentReader Margin="-10,0,10,0">
+            <FlowDocument>
+                <Paragraph  FontSize="20">
+                    Сверхпроводимость
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <Table.RowGroups>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontSize="12">
+                                        Сверхпроводи́мость — свойство некоторых материалов обладать строго нулевым электрическим сопротивлением при достижении ими температуры ниже определённого значения (критическая температура). Известны несколько сотен соединений, чистых элементов, сплавов и керамик, переходящих в сверхпроводящее состояние. Сверхпроводимость — квантовое явление. Оно характеризуется также эффектом Мейснера, заключающимся в полном вытеснении магнитного поля из объёма сверхпроводника. Существование этого эффекта показывает, что сверхпроводимость не может быть описана просто как идеальная проводимость в классическом понимании.
+                                    </Paragraph>
+                                    <Paragraph  FontSize="12">
+                                        Открытие в 1986—1993 годах ряда высокотемпературных сверхпроводников (ВТСП) далеко отодвинуло температурную границу сверхпроводимости и позволило практически использовать сверхпроводящие материалы не только при температуре кипения жидкого гелия (4,2 К), но и при температуре кипения жидкого азота (77 К), гораздо более дешёвой криогенной жидкости.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph BorderThickness="1" BorderBrush="Gray" FontSize="10" Background="Gray" TextAlignment="Left">
+                                        <Floater>
+                                            <BlockUIContainer>
+                                                <Image Source="Data/Picture.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                        <Span Background="Gray"/>
+                                        <Span Foreground="Blue">
+                                            Магнит
+                                        </Span>
+                                        , левитирующий над высокотемпературным сверхпроводником, охлаждаемым жидким азотом
+                                    </Paragraph>
+
+
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table.RowGroups>
+                </Table>
+                <Section BorderThickness="1" FontSize="12">
+                    <Paragraph>
+                        Содержание
+                    </Paragraph>
+                    <List MarkerStyle="Decimal">
+                        <ListItem>
+                            <Paragraph>
+                                История открытия
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Классификация
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                               Свойства сверхпроводников
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                </Section>
+                
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
